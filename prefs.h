@@ -1,5 +1,5 @@
 #pragma once
 
-#define SIZE 25
+#define SIZE 10
 #define CELL 32
-#define N 120
+#define N 17
