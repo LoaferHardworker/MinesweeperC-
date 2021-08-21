@@ -20,7 +20,7 @@ int main() {
 	std::vector<sf::Sprite> cellsSprites = game.updateCells(t);
 
 	//window
-	sf::RenderWindow window(sf::VideoMode(SIZE * CELL, SIZE * CELL), L"Сапёр");
+	sf::RenderWindow window(sf::VideoMode(SIZE * CELL, SIZE * CELL), L"Minesweeper");
 	window.setFramerateLimit(15);
 
 	while (window.isOpen()) {
@@ -42,11 +42,11 @@ int main() {
 
 					char state = game.gameState();
 					if (state == 1) {
-						text.setString(L"Вы выиграли!");
+						text.setString(L"Win!");
 						text.setFillColor(sf::Color::Black);
 					}
 					if (state == -1) {
-						text.setString(L"Вы проиграли!");
+						text.setString(L"Lose!");
 						text.setFillColor(sf::Color(170, 30, 50));
 					}
 				}
